@@ -135,7 +135,7 @@
   grid-row: 2/4;
   background-image: url("../assets/img/mobile-background.jpg");
   background-repeat: no-repeat;
-  background-size: 150%;
+  background-size: 160%;
   background-position: center;
   background-attachment: fixed;
   height: auto;
@@ -395,7 +395,7 @@
 .contenedor__grid-bestof {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 30% auto 15%;
+  grid-template-rows: 22% auto 15%;
   width: 100%;
   height: 100vh;
 }
