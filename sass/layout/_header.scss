@@ -13,8 +13,8 @@
 
 .header-bestof {
     @include mobileFirst(notebookL) {
-    grid-column: 1 / 11;
-    grid-row: 1 / 2;
+        grid-column: 1 / 11;
+        grid-row: 1 / 2;
     }
 
 }

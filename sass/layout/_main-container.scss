@@ -1,76 +1,86 @@
 .main {
-    background-image: $bgMobileIndex;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    grid-column: 1 / 5;
-    grid-row: 2 / 4;
-    background-color: $backgroundColorDefault;
-     @include mobileFirst(tablet) {
-        background-image: $bgIndex2;
-        background-size: 200%;
-     }
-     @include mobileFirst(notebook) {
-        background-size: 150%;
-        
-     }
-     @include mobileFirst(notebookM) {
+   background-image: $bgMobileIndex;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-position: center;
+   grid-column: 1 / 5;
+   grid-row: 2 / 4;
+   background-color: $backgroundColorDefault;
+
+   @include mobileFirst(tablet) {
+      background-image: $bgIndex2;
+      background-size: 200%;
+   }
+
+   @include mobileFirst(notebook) {
+      background-size: 150%;
+
+   }
+
+   @include mobileFirst(notebookM) {
       background-size: 100%;
-     }
-     @include mobileFirst(notebookL) {
-        background-size: 100%;
-     }
-     @include mobileFirst(4k) {
-        background-size: cover;
-     }
-  
+   }
+
+   @include mobileFirst(notebookL) {
+      background-size: 100%;
+   }
+
+   @include mobileFirst(4k) {
+      background-size: cover;
+   }
+
 }
 
 
 /* MAIN SECCION BEST OF*/
 
 .main-bestof {
-    grid-column: 1 / 5;
-    grid-row: 2 / 4;
-    background-image: $bgMobileBestOF;
-    background-repeat: no-repeat;
-    background-size: 150%;
-    background-position: center;
-    background-attachment: fixed;
-    height: auto;
-    @include mobileFirst(notebook) {
+   grid-column: 1 / 5;
+   grid-row: 2 / 4;
+   background-image: $bgMobileBestOF;
+   background-repeat: no-repeat;
+   background-size: 150%;
+   background-position: center;
+   background-attachment: fixed;
+   height: auto;
+
+   @include mobileFirst(notebook) {
       background-image: $bgBestOF;
       grid-column: 1 / 11;
       grid-row: 2 / 4;
-    }
+   }
 
-      .content-card-bestof {
+   .content-card-bestof {
       margin-top: 200px;
       margin-bottom: 200px;
       display: flex;
       flex-direction: column;
+
       @include mobileFirst(notebookL) {
-         flex-direction: row;   
-         width: 100vw; 
+         flex-direction: row;
+         width: 100vw;
          flex-wrap: wrap;
-     }
-      
       }
-      .main-bestof--h1 {
-         margin-top: 20%;
-         margin-left: 5%;
-         font-family: $fontRock;
-         color: antiquewhite;
-         @include mobileFirst(notebookM) {
-            margin-top: 10%;
-         } 
-         @include mobileFirst(notebookL) {
-            margin-top: 15%;
-         }
+
+   }
+
+   .main-bestof--h1 {
+      margin-top: 20%;
+      margin-left: 5%;
+      font-family: $fontRock;
+      color: antiquewhite;
+
+      @include mobileFirst(notebookM) {
+         margin-top: 10%;
       }
-    
-    
-    
+
+      @include mobileFirst(notebookL) {
+         margin-top: 15%;
+      }
+   }
+
+
+
 }
 
 
@@ -88,17 +98,18 @@
    background-position: bottom;
    background-repeat: no-repeat;
    background-size: 150%;
+
    @include mobileFirst(tablet) {
       background-image: $bgBibliografia;
       background-position: center;
       background-size: cover;
    }
 
-      @include mobileFirst(notebookL) {
-         display: flex;
-         flex-direction: row;
-         width: 100%;
-      }
+   @include mobileFirst(notebookL) {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+   }
 
 
    .main-bibliografia--h1 {
@@ -110,6 +121,7 @@
       margin-top: 40%;
       margin-bottom: 10%;
       margin-left: 5%;
+
       @include mobileFirst(notebook) {
          margin-top: 10%;
          margin-bottom: 10%;
@@ -117,19 +129,22 @@
 
       }
    }
+
    .cards-bibliografia {
       margin-bottom: 50%;
+
       @include mobileFirst(notebookL) {
          width: 57%;
          margin-left: 10%;
-         margin-top: 9%;       
+         margin-top: 9%;
       }
+
       @include mobileFirst(4k) {
          width: 35%;
          margin-left: 10%;
          margin-top: 10%;
          margin-bottom: 8%;
-     
+
       }
    }
 
@@ -146,25 +161,30 @@
    background-position: bottom;
    background-repeat: no-repeat;
    background-size: 100%;
+
    @include mobileFirst(ml) {
-   background-size: cover;
-   
+      background-size: cover;
+
    }
+
    @include mobileFirst(tablet) {
-   background-image: $bgDiscografia;
+      background-image: $bgDiscografia;
 
       background-size: 120%;
    }
+
    @include mobileFirst(notebookM) {
       background-image: $bgDiscografia2;
       background-size: 100%;
       background-position: center;
-  }
+   }
+
    @include mobileFirst(notebookL) {
       background-image: $bgDiscografia2;
       background-size: cover;
       background-position: center;
    }
+
    .main-discografia--h1 {
       font-family: $fontRubik;
       color: rgb(255, 255, 255);
@@ -174,15 +194,18 @@
       margin-top: 40%;
       margin-bottom: 10%;
       margin-left: 5%;
+
       @include mobileFirst(notebookM) {
          margin-top: 10%;
       }
+
       @include mobileFirst(notebookL) {
          margin-top: 20%;
       }
 
    }
 }
+
 /* MAIN CONTACT */
 .main-contact {
    grid-column: 1 / 5;
@@ -196,59 +219,66 @@
    justify-content: center;
    display: flex;
    padding: auto;
+
    @include mobileFirst(tablet) {
       background-image: $bgContact;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      
+
+   }
+
+   @include mobileFirst(notebook) {
+      background-color: black;
+      background-position: right;
+      background-size: contain;
+
+
+   }
+
+   @include mobileFirst(notebookM) {
+      background-color: black;
+      background-position: center;
+      background-size: 100%;
+   }
+
+   @include mobileFirst(notebookL) {
+      background-color: black;
+      background-position: center;
+      background-size: cover;
+
+
+   }
+
+   .contact-h3 {
+      font-family: $fontRubik;
+      color: rgb(255, 255, 255);
+      font-size: 1.2em;
+      font-weight: 600;
+      margin-left: 0%;
+
+   }
+
+   .article-contact {
+      margin-bottom: 70%;
+
+      @include mobileFirst(tablet) {
+         margin-bottom: 30%;
+         margin-left: 50%;
+
       }
+
       @include mobileFirst(notebook) {
-         background-color: black;
-         background-position: right;
-         background-size: contain;
-        
-         
-         }
-         @include mobileFirst(notebookM) {
-            background-color: black;
-            background-position: center;
-            background-size: 100%;
-        }
-         @include mobileFirst(notebookL) {
-            background-color: black;
-            background-position: center;
-            background-size: cover;
-            
-            
-            }
-   
-         .contact-h3 {
-            font-family: $fontRubik;
-            color: rgb(255, 255, 255);
-            font-size: 1.2em;
-            font-weight: 600;
-            margin-left: 0%;
-
-         }
-
-         .article-contact{
-         margin-bottom: 70%;
-         @include mobileFirst(tablet) {
-            margin-bottom: 30%;
-            margin-left: 50%;
-            
-            }
-         @include mobileFirst(notebook) {
-            margin-bottom: 15%;
-            margin-left: 32%;
-               
-               }
-         @include mobileFirst(notebookL) {
-                  margin-bottom: 15%;
-                  margin-left: 32%;
-                     
-                     }
+         margin-bottom: 15%;
+         margin-left: 32%;
 
       }
+
+      @include mobileFirst(notebookL) {
+         margin-bottom: 15%;
+         margin-left: 32%;
+
+      }
+
+   }
 }

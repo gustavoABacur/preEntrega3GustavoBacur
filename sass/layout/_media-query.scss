@@ -7,12 +7,11 @@ $mediaquery: (
     notebookM: 1366px,
     notebookL: 1440px,
     4k: 2560px
-
 );
 
-@mixin mobileFirst($brackpoint){
+@mixin mobileFirst($brackpoint) {
     @media screen and (min-width: map-get($mediaquery, $brackpoint)) {
         @content;
     }
 
-} 
+}
